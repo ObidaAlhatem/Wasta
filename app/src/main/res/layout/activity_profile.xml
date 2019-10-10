@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/personal_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="#C9E6CA"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_picture"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:hint="@string/user_name"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="155dp"
+        android:text="@string/information"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="191dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/phonecall"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="61dp"
+                android:layout_height="50dp"
+                android:background="@color/colorSecondaryText">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSecondaryText"
+                    android:padding="8dp"
+                    android:src="@drawable/phoneicon" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryLight"
+                android:hint="@string/phone"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/fbaccount"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="61dp"
+                android:layout_height="50dp"
+                android:background="@color/colorSecondaryText">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/facebookicon" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fb_acount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryLight"
+                android:hint="@string/facebook_account"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif"
+        android:padding="2dp"
+        android:text="@string/services_saved"
+        android:textColor="#388e3c"
+        android:textSize="24sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/services"
+        android:layout_margin="10dp"
+        android:id="@+id/savedlist"
+        android:background="#388e3c">
+
+    </ListView>
+
+</RelativeLayout>

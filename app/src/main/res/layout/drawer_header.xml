@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/wasta">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="W a s t a"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="#448aff"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

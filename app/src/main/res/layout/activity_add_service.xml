@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AddService">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/wasta2" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/service_name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/service_details"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:inputType="phone"/>
+
+
+
+        <ImageView
+            android:id="@+id/personal_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/upload_pp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_personal_picture"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorText" />
+
+        <ImageView
+            android:id="@+id/personal_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/upload_pID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_personal_id"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorText"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/add"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/report_problem"
+            android:textColor="@color/colorSecondaryText"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

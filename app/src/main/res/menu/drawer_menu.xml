@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:id="@+id/gr_read">
+
+        <item
+            android:id="@+id/apps"
+            android:title="@string/other_apps"
+            android:icon="@drawable/ic_mor"/>
+    </group>
+
+    <group android:id="@+id/gr_write">
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="@string/share_app"
+            android:icon="@drawable/ic_share"/>
+        <item
+            android:id="@+id/contact"
+            android:title="@string/contact_us"
+            android:icon="@drawable/ic_mail"/>
+        <item
+            android:id="@+id/rate_us"
+            android:title="@string/rate_app"
+            android:icon="@drawable/ic_rate"/>
+
+
+    </group>
+    <group
+        android:id="@+id/exit_group">
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit"
+        android:icon="@drawable/ic_exit"
+        />
+</group>
+
+
+
+
+
+    </menu>

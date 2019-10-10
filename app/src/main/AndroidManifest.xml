@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.devneoxmy.wasta">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".AddService" />
+        <activity android:name=".ServiceDetails" />
+        <activity android:name=".LogIn" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity android:name=".NewUser" />
+        <activity
+            android:name=".IntentActivity"
+            android:theme="@style/AppTheme.noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OffersActivity"
+            android:label="@string/offers_acticity"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity android:name=".Profile"></activity>
+    </application>
+
+</manifest>

@@ -15,13 +15,15 @@
     <string name="address">العنوان</string>
     <string name="phone_number">رقم الهاتف</string>
     <string name="facebook">الفيسبوك</string>
-    <string name="upload_personal_picture">رفع صورة شخصية</string>
+    <string name="choose_service_picture">اختر صور للخدمة</string>
+    <string name="upload_service_picture">رفع صور للخدمة</string>
     <string name="upload_personal_id">رفع صورة الهوية</string>
     <string name="add">إضافة</string>
     <string name="report_problem">الإبلاغ عن مشكلة</string>
     <string name="forgot_my_password">نسيت كلمة المرور</string>
     <string name="new_user">مستخدم جديد؟</string>
     <string name="sign_up"> التسجيل</string>
+    <string name="sign_in"> التسجيل</string>
     <string name="googlelogo">شعار جوجل</string>
     <string name="e_mail">الإيميل</string>
     <string name="password">كلمة المرور</string>

@@ -34,24 +34,28 @@
         </LinearLayout>
 
         <EditText
+            android:id="@+id/SN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/service_name"
             android:inputType="textCapWords" />
 
         <EditText
+            android:id="@+id/SD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/service_details"
             android:inputType="textMultiLine" />
 
         <EditText
+            android:id="@+id/Ad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/address"
             android:inputType="textPostalAddress"/>
 
         <EditText
+            android:id="@+id/PN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/phone_number"
@@ -64,13 +68,30 @@
             android:layout_width="60dp"
             android:layout_height="60dp" />
 
-        <Button
-            android:id="@+id/upload_pp"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/upload_personal_picture"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@color/colorText" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/choose_pp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_service_picture"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorText"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:id="@+id/upload_pp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/upload_service_picture"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/personal_id"
@@ -86,6 +107,7 @@
             android:textColor="@color/colorText"/>
 
         <Button
+            android:id="@+id/add_service"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

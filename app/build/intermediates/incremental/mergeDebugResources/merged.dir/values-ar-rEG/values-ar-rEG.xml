@@ -16,6 +16,7 @@
     <string name="add_offer">اضافة عرض</string>
     <string name="address">العنوان</string>
     <string name="app_name">واسطة</string>
+    <string name="choose_service_picture">اختر صور للخدمة</string>
     <string name="contact_us">تواصل معنا</string>
     <string name="description">الوصف</string>
     <string name="e_mail">الإيميل</string>
@@ -43,10 +44,11 @@
     <string name="service_name">اسم الخدمة</string>
     <string name="services_saved">الخدمات المحفوظة</string>
     <string name="share_app">شارك االتطبيق</string>
+    <string name="sign_in"> التسجيل</string>
     <string name="sign_up"> التسجيل</string>
     <string name="title_activity_add_service">إضافة خدمة</string>
     <string name="upload_personal_id">رفع صورة الهوية</string>
-    <string name="upload_personal_picture">رفع صورة شخصية</string>
+    <string name="upload_service_picture">رفع صور للخدمة</string>
     <string name="user_name">اسم المستخدم</string>
     <string name="username">اسم المستخدم</string>
     <string name="wasta_for_easier_services_exchange">وسطة.لتبادل اسهل للخدمات</string>

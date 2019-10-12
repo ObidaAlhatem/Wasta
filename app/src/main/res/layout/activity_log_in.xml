@@ -66,36 +66,11 @@
         android:textStyle="bold"
         />
 
-    <LinearLayout
-        android:layout_width="236dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="36dp"
-        android:layout_marginRight="36dp"
-        android:background="@color/colorDivider"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="6dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginEnd="6dp"
-            android:layout_marginRight="4dp"
-            android:contentDescription="@string/googlelogo"
-            android:src="@drawable/go"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="4dp"
-            android:text="@string/log_in_with_google"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInByGoogle"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center" />
 
     <LinearLayout
         android:layout_width="236dp"
@@ -143,15 +118,15 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/signup"
+            android:id="@+id/signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/tv1"
             android:layout_toRightOf="@id/tv1"
             android:clickable="true"
-            android:onClick="signup"
+            android:onClick="signin"
             android:focusable="true"
-            android:text="@string/sign_up"
+            android:text="@string/sign_in"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
             android:textStyle="bold"

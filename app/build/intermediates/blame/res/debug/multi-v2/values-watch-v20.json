@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Dev Neoxmy2\\new\\Pull\\clone-reham\\Wasta-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "C:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-16.0.1.aar\\658952d6cb40c87bd45a0542e2fabb19\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-16.0.1.aar\\98aced69e94c13cc8684d2ee79c07084\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

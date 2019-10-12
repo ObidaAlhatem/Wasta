@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Dev Neoxmy2\\new\\Pull\\clone-reham\\Wasta-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9833c8d5750c5cd9efc49f81daa599bd\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f22739878864207798befe052020101d\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\3064f3ed5d69e7c0d7d7a3fecd2b445a\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\693db66a9d675af9cfc68485a15b3129\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

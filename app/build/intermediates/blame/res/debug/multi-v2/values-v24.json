@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Dev Neoxmy2\\new\\Pull\\clone-reham\\Wasta-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\89127aaa05f9a49b5d3b66c131bdc1e4\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\33fb70eb62c05e1b988396b9a4007a64\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\9833c8d5750c5cd9efc49f81daa599bd\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f22739878864207798befe052020101d\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Dev Neoxmy2\\new\\Pull\\clone-reham\\Wasta-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
+            "outputFile": "C:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\d6d6afba4aebdb552c7cf4442c31a223\\res\\values-as\\values.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\05f75459c963719e6daf6bc5b5b30676\\res\\values-as\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Samah\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\8144b09da4144fef2dd70b8e43c7d124\\res\\values-as\\values.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\ddf6bbf85eff5dd0be50ec35e93c3f9b\\res\\values-as\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

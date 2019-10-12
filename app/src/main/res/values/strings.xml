@@ -6,13 +6,15 @@
     <string name="address">Address</string>
     <string name="phone_number">Phone Number</string>
     <string name="facebook">Facebook</string>
-    <string name="upload_personal_picture">Upload Personal Picture</string>
+    <string name="choose_service_picture">Choose Service Pictures</string>
+    <string name="upload_service_picture">Upload Service Pictures</string>
     <string name="upload_personal_id">Upload Personal ID</string>
     <string name="add">Add</string>
     <string name="report_problem">Report Problem</string>
     <string name="forgot_my_password">Forgot my password</string>
     <string name="new_user">New user?</string>
     <string name="sign_up"> Sign Up</string>
+    <string name="sign_in"> Sign In</string>
     <string name="googlelogo">googleLogo</string>
     <string name="e_mail">E-mail</string>
     <string name="password">Password</string>

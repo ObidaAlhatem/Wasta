@@ -1,4 +1,4 @@
-#Thu Oct 10 12:12:14 EET 2019
-base.0=F\:\\Dev Neoxmy2\\new\\Pull\\clone-reham\\Wasta-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sat Oct 12 12:29:39 EET 2019
+base.0=C\:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

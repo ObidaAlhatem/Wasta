@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
+            "outputFile": "E:\\wasta master\\wasta\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\05f75459c963719e6daf6bc5b5b30676\\res\\values-ky\\values.xml",
+                    "source": "C:\\Users\\Sony\\.gradle\\caches\\transforms-2\\files-2.1\\870ddec570b61308a5c168863fa4a12d\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\ddf6bbf85eff5dd0be50ec35e93c3f9b\\res\\values-ky\\values.xml",
+                    "source": "C:\\Users\\Sony\\.gradle\\caches\\transforms-2\\files-2.1\\6d86addf347e29273b54570195246794\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f22739878864207798befe052020101d\\res\\values-ky\\values-ky.xml",
+                    "source": "C:\\Users\\Sony\\.gradle\\caches\\transforms-2\\files-2.1\\47b241d3b685aa8baffaba7afc0a9492\\res\\values-ky\\values-ky.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

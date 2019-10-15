@@ -1,4 +1,4 @@
-#Wed Oct 09 17:32:33 GST 2019
-base.0=D\:\\New Wasta\\Wasta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+#Mon Oct 14 20:29:43 WEST 2019
+base.0=E\:\\wasta master\\wasta\\Wasta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
 path.0=classes.dex
 renamed.0=classes.dex

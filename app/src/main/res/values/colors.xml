@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimary1">#64CF69</color>
+    <color name="colorPrimary2">#5dc660</color>
     <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorPrimaryDark1">#1F4D21</color>
     <color name="colorPrimaryLight">#c8e6c9</color>
     <color name="colorText">#FFFFFF</color>
     <color name="colorPrimaryText">#212121</color>
@@ -9,5 +12,9 @@
     <color name="colorAccent">#448aff</color>
     <color name="colorDivider">#BDBDBD</color>
     <color name="colorToggl">#ffffff</color>
+    <color name="colorIcons">#8D8D8D</color>
+    <color name="colorIcons1">#FFA8A8A8</color>
+    <color name="colorHeart1">#ba000d</color>
+    <color name="colorHeart2">#f44336</color>
 
 </resources>

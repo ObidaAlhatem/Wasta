@@ -15,16 +15,9 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".AddService" />
-        <activity android:name=".ServiceDetails" />
-        <activity android:name=".LogIn" />
+
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme.noActionBar" />
-        <activity android:name=".NewUser" />
-        <activity
-            android:name=".IntentActivity"
+            android:name=".LogIn"
             android:theme="@style/AppTheme.noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity android:name=".IntentActivity" />
+        <activity android:name=".AddService" />
+        <activity android:name=".ServiceDetails" />
+        <activity android:name=".NewUser" />
+        <activity android:name=".SplashScreen" />
         <activity
             android:name=".OffersActivity"
             android:label="@string/offers_acticity"

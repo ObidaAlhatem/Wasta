@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,11 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -31,12 +37,19 @@ public class Profile extends AppCompatActivity {
     String userName;
     LinearLayout L1;
     LinearLayout L2;
+    FirebaseAuth firebaseAuth;
+    DatabaseReference muserReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        username = (TextView) findViewById(R.id.username);
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        String uId = currentUser.getUid();
+
+        muserReference = FirebaseDatabase.getInstance().getReference("Wasta_app_users").child(uId);
 
         pic = (ImageView) findViewById(R.id.personal_picture);
         pic.setOnClickListener(new View.OnClickListener() {
@@ -50,9 +63,9 @@ public class Profile extends AppCompatActivity {
             }
         });
 
+
         username = (TextView) findViewById(R.id.name);
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
 
 
         L1 = (LinearLayout) findViewById(R.id.phonecall);
@@ -95,8 +108,38 @@ public class Profile extends AppCompatActivity {
         }
     }
 
+    private void checkUserStatuse() {
 
-    public void openfb(View view) {
-        Intent fbIntent = new Intent();
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+
+        if (user != null) {
+
+            muserReference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                    String value = dataSnapshot.child("name").getValue(String.class);
+                    username.setText(value);
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+
+
+        } else {
+
+            // user not signed and go to MainActivity
+            startActivity(new Intent(Profile.this, MainActivity.class));
+            finish();
+        }
     }
-}
+
+
+
+        public void openfb (View view){
+            Intent fbIntent = new Intent();
+        }
+    }

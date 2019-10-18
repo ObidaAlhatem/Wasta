@@ -93,7 +93,7 @@
                     android:hint="@string/email"
                     android:textColorHint="@color/colorText"
                     android:textSize="20sp"
-                    android:inputType="text"
+                    android:inputType="textEmailAddress"
                     android:textColor="@color/colorText"
                     android:singleLine="true" />
             </LinearLayout>
@@ -185,7 +185,7 @@
                     android:hint="@string/phonenumber"
                     android:textColorHint="@color/colorText"
                     android:textSize="20sp"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:textColor="@color/colorText"
                     android:singleLine="true" />
             </LinearLayout>

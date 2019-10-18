@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\wasta master\\wasta\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
+            "outputFile": "C:\\Users\\Obida Alhatem\\Desktop\\Wasta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sony\\.gradle\\caches\\transforms-2\\files-2.1\\870ddec570b61308a5c168863fa4a12d\\res\\values-as\\values.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-2\\files-2.1\\39fdc1c883878515ec9f1673c90e72e4\\res\\values-as\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sony\\.gradle\\caches\\transforms-2\\files-2.1\\6d86addf347e29273b54570195246794\\res\\values-as\\values.xml",
+                    "source": "C:\\Users\\Obida Alhatem\\.gradle\\caches\\transforms-2\\files-2.1\\c378ede186aad3f76d3adf966918a6bf\\res\\values-as\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

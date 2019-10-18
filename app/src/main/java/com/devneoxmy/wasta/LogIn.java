@@ -51,6 +51,16 @@ public class LogIn extends AppCompatActivity {
         //initialize the FirebaseAuth instance.
         mAuth = FirebaseAuth.getInstance();
 
+        //New user Sign in
+        TextView signIN= (TextView) findViewById(R.id.signin);
+        signIN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent =new Intent(LogIn.this, NewUser.class);
+                startActivity(mainIntent);
+            }
+        });
+
         mEmailEt=findViewById(R.id.name);
         mPasswordEt=findViewById(R.id.password);
 
@@ -99,7 +109,7 @@ public class LogIn extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
                             // user is logged in ,open profile activity
-                            startActivity(new Intent(LogIn.this, MainActivity.class));
+                            startActivity(new Intent(LogIn.this, IntentActivity.class));
                             finish();
                         } else {
                             //dismiss progress dialog
@@ -154,6 +164,7 @@ public class LogIn extends AppCompatActivity {
         }
     }
 
+
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
 
 
@@ -179,5 +190,6 @@ public class LogIn extends AppCompatActivity {
                         // ...
                     }
                 });
+
     }
 }

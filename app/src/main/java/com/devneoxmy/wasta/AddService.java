@@ -20,6 +20,8 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -27,6 +29,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
+import java.util.jar.Attributes;
 
 
 public class AddService extends AppCompatActivity {
@@ -44,6 +47,7 @@ public class AddService extends AppCompatActivity {
 
     Service service;
     DatabaseReference reff;
+    public FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +68,29 @@ public class AddService extends AppCompatActivity {
         mPhNumber = (EditText)findViewById(R.id.PN);
         add = (Button)findViewById(R.id.add_service);
         service = new Service();
-        reff = FirebaseDatabase.getInstance().getReference().child("Service added");
+        final FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        final String ServiceId = firebaseUser.getUid();
+        reff = FirebaseDatabase.getInstance().getReference().child("Wasta_app_user").child(ServiceId).child("ServiceDetails");
+
+        String Name = mName.getText().toString().trim();
+        String Details = mDetails.getText().toString().trim();
+        String Address = mAddress.getText().toString().trim();
+        String PhoneNm = mPhNumber.getText().toString().trim();
+
+        if (Name.isEmpty()) {
+            mName.setError("Service name is required");
+            mName.setFocusable(true);
+        }else if (Details.isEmpty()) {
+            mDetails.setError("Service details is required");
+            mDetails.setFocusable(true);
+        }else if (Address.isEmpty()) {
+            mAddress.setError("Your Address is required");
+            mAddress.setFocusable(true);
+        }else if (PhoneNm.length()<10){
+            mAddress.setError("enter valid phone number");
+            mAddress.setFocusable(true);
+        }
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,8 +101,15 @@ public class AddService extends AppCompatActivity {
                 service.setAddress(mAddress.getText().toString().trim());
                 service.setPhNumber(PhNumber);
 
-                reff.push().setValue(service);
-                Toast.makeText(AddService.this, "Service Added", Toast.LENGTH_LONG).show();
+                if (firebaseUser!=null) {
+
+                    Toast.makeText(AddService.this, "Please Login", Toast.LENGTH_LONG).show();
+                    }
+                else {
+
+                    reff.push().child(ServiceId).setValue(service);
+                    Toast.makeText(AddService.this, "Service Added", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -97,7 +130,7 @@ public class AddService extends AppCompatActivity {
     }
 
     private void FileUploader(){
-        StorageReference Ref = mStorageRef.child(System.currentTimeMillis()+"."+GetFileExtension(filePath));
+        StorageReference Ref = mStorageRef.child(System.currentTimeMillis()+"."+GetFileExtension(filePath)).child("ServiceDetails");
 
         Ref.putFile(filePath)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

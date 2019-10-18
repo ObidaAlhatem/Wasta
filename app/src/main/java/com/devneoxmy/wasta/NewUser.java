@@ -29,6 +29,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Pattern;
@@ -38,9 +39,10 @@ public class NewUser extends AppCompatActivity {
     EditText mPasseord,mEmail,mUserName,mPhoneNumber;
     TextView mRegiter;
     ProgressDialog progressDialog;
-    TextView haveAccountTV;
+    TextView haveAccount;
 
     private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,7 +129,8 @@ public class NewUser extends AppCompatActivity {
                             progressDialog.dismiss();
                             UserInfo userInfo=new UserInfo(userName,email,phone);
                             // create firebase database
-                            FirebaseDatabase.getInstance().getReference("users")
+                            FirebaseDatabase.getInstance().getReference()
+                                    .child("Wasta_app_user")
                                     .child(user.getUid())
                                     .setValue(userInfo)
                                     .addOnFailureListener(new OnFailureListener() {
@@ -139,7 +142,7 @@ public class NewUser extends AppCompatActivity {
                                     });
 
                             Toast.makeText(NewUser.this,"Registered..."+user.getEmail(),Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(NewUser.this, MainActivity.class));
+                            startActivity(new Intent(NewUser.this, IntentActivity.class));
                             finish();
                         } else {
                             progressDialog.dismiss();
@@ -159,6 +162,8 @@ public class NewUser extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 }

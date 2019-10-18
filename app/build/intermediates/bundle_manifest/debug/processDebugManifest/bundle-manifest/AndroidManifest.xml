@@ -26,16 +26,8 @@
         android:supportsRtl="false"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.devneoxmy.wasta.SplashScreen" />
-        <activity android:name="com.devneoxmy.wasta.AddService" />
-        <activity android:name="com.devneoxmy.wasta.ServiceDetails" />
-        <activity android:name="com.devneoxmy.wasta.LogIn" />
         <activity
-            android:name="com.devneoxmy.wasta.MainActivity"
-            android:theme="@style/AppTheme.noActionBar" />
-        <activity android:name="com.devneoxmy.wasta.NewUser" />
-        <activity
-            android:name="com.devneoxmy.wasta.IntentActivity"
+            android:name="com.devneoxmy.wasta.LogIn"
             android:theme="@style/AppTheme.noActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,6 +35,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.devneoxmy.wasta.MainActivity"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity android:name="com.devneoxmy.wasta.SplashScreen" />
+        <activity android:name="com.devneoxmy.wasta.IntentActivity" />
+        <activity android:name="com.devneoxmy.wasta.AddService" />
+        <activity android:name="com.devneoxmy.wasta.ServiceDetails" />
+        <activity android:name="com.devneoxmy.wasta.NewUser" />
         <activity
             android:name="com.devneoxmy.wasta.OffersActivity"
             android:label="@string/offers_acticity"
@@ -151,11 +151,6 @@
         <meta-data
             android:name="android.arch.lifecycle.VERSION"
             android:value="27.0.0-SNAPSHOT" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.devneoxmy.wasta.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

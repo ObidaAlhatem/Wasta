@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/username"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         tools:targetApi="o" />
 
     <EditText
@@ -123,14 +123,11 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/tv1"
             android:layout_toRightOf="@id/tv1"
-            android:clickable="true"
-            android:onClick="signin"
             android:focusable="true"
             android:text="@string/sign_in"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:ignore="OnClick,RtlHardcoded" />
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <TextView
